@@ -24,8 +24,6 @@ test("POST to /api/v1/migrations should return 200", async () => {
 
   const responseBody2 = await response2.json();
 
-  console.log(responseBody2);
-
   expect(Array.isArray(responseBody2)).toBe(true);
   expect(responseBody2.length).toBe(0);
 });
